@@ -161,10 +161,10 @@ function capitalize(s) { return s.charAt(0).toUpperCase() + s.slice(1); }
 document.addEventListener('DOMContentLoaded', () => {
   // Optional: Override images with S3 links. Replace placeholders with your actual S3 object URLs.
   const S3_IMAGE_OVERRIDES = {
-    // 'kaas-plateau': 'https://YOUR_BUCKET.s3.amazonaws.com/kaas.jpg',
-    // 'ajinkyatara-fort': 'https://YOUR_BUCKET.s3.amazonaws.com/ajinkyatara.jpg',
-    // 'sajjangad-fort': 'https://YOUR_BUCKET.s3.amazonaws.com/sajjangad.jpg',
-    // 'mahabaleshwar-temple': 'https://YOUR_BUCKET.s3.amazonaws.com/mahabaleshwar.jpg'
+    'kaas-plateau': 'https://place-photos-mh11.s3.eu-north-1.amazonaws.com/kass-pathar.jpg',
+     'ajinkyatara-fort': 'https://place-photos-mh11.s3.eu-north-1.amazonaws.com/ajinkytara+fort.jpg',
+     'sajjangad-fort': 'https://place-photos-mh11.s3.eu-north-1.amazonaws.com/sajjangad+fort.jpg',
+     'mahabaleshwar-temple': 'https://place-photos-mh11.s3.eu-north-1.amazonaws.com/mahabaleshwar+temple.jpg'
   };
 
   // Limit to the requested four places
@@ -205,6 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open(img.src, '_blank', 'noopener');
   });
 });
+
 
 
 
