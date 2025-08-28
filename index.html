@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Explore Satara - Tourist Guide</title>
+    <meta name="description" content="Discover popular tourist places in Satara district with photos and key info.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="logo">Explore Satara</h1>
+            <nav class="nav">
+                <a href="#places">Places</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <h2>Satara District Tourist Guide</h2>
+                <p>Find iconic sights, natural wonders, forts, and temples across Satara.</p>
+                <div class="controls">
+                    <input id="searchInput" type="search" placeholder="Search places, e.g. Kaas, Thoseghar, Sajjangad…" aria-label="Search places">
+                    <select id="categoryFilter" aria-label="Filter by category">
+                        <option value="all">All categories</option>
+                        <option value="nature">Nature</option>
+                        <option value="waterfall">Waterfall</option>
+                        <option value="fort">Fort</option>
+                        <option value="temple">Temple</option>
+                        <option value="museum">Museum</option>
+                        <option value="viewpoint">Viewpoint</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="places" class="places-section">
+            <div class="container">
+                <h3 class="section-title">Popular Places</h3>
+                <div id="placesGrid" class="grid"></div>
+                <p id="emptyState" class="empty" hidden>No places match your search.</p>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h3 class="section-title">About Satara</h3>
+                <p>
+                    Satara district, nestled in the Sahyadri range of Maharashtra, is known for the UNESCO-recognized
+                    Kaas Plateau, roaring waterfalls, serene dams, and historic Maratha forts. Plan your day trips with
+                    the curated list above.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span>&copy; <span id="year"></span> Explore Satara</span>
+            <span>Made with HTML, CSS and JavaScript</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+    // Small enhancement: update footer year without touching main script
+    document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
+
